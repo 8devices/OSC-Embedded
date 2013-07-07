@@ -44,9 +44,10 @@
 
 typedef union _OSCTimetag {
 	uint64_t raw;
-	struct {
-		uint32_t seconds;
+	struct {	// XXX: switched to correct for endianess
 		uint32_t fraction;
+		uint32_t seconds;
+
 	} time;
 } OSCTimetag;
 
