@@ -53,7 +53,7 @@ typedef union _OSCTimetag {
 
 typedef struct _OSCBundle OSCBundle;
 
-OSCBundle*	OSCBundle_new();
+OSCBundle*	OSCBundle_new(void);
 OSCBundle*	OSCBundle_clone(OSCBundle *oscBundle);
 void		OSCBundle_delete(OSCBundle *oscBundle);
 

@@ -43,7 +43,7 @@ typedef enum { OSC_OK=0, OSC_ERROR=1, OSC_ALLOC_FAILED, OSC_FORMAT_ERROR } OSCRe
 
 typedef struct _OSCMessage OSCMessage;
 
-OSCMessage*	OSCMessage_new();
+OSCMessage*	OSCMessage_new(void);
 OSCMessage* OSCMessage_clone(OSCMessage *oscMessage);
 void		OSCMessage_delete(OSCMessage *oscMessage);
 

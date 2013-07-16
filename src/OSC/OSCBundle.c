@@ -54,7 +54,7 @@ typedef struct _OSCBundle {
 } OSCBundle;
 
 
-OSCBundle* OSCBundle_new() {
+OSCBundle* OSCBundle_new(void) {
 	OSCBundle *bundle = (OSCBundle*) MemoryManager_malloc(sizeof(OSCBundle));
 
 	if (bundle == NULL)

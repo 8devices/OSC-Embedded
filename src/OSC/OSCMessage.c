@@ -73,7 +73,7 @@ OSCResult OSCMessage_addArgument(OSCMessage *oscMessage, char type, OSCArgument 
  *
  */
 
-OSCMessage* OSCMessage_new() {
+OSCMessage* OSCMessage_new(void) {
 	OSCMessage *msg = (OSCMessage*)MemoryManager_malloc(sizeof(OSCMessage));
 
 	if (msg == NULL)
